@@ -79,7 +79,11 @@ if (isset($_GET['url']) && !empty($_GET['url']))
 
 	include('pages/done.php');
 }
-else
+elseif (isset($_GET['add'])) 
 {
 	include('pages/add.php');
+}
+else
+{
+	include('pages/list.php');
 }

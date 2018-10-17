@@ -20,4 +20,4 @@ if (isset($_GET['token']))
 	}
 }
 // no redirect
-require_once './-/pages/list.php';
+require_once './-/pages/home.php';

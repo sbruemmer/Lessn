@@ -12,7 +12,7 @@ require_once 'LessnListShortcut.php';
 $list = new LessnListShortcut();
 $list = $list->get_shortcuts();
 ?>
-<h2>List of shortcuts <a href="<?php echo str_replace( 'index.php', '-/', LESSN_URL ) ?>">... or, new one.</a></h2>
+<h2>List of shortcuts <a href="?add">... or, new one.</a></h2>
 <ul>
 	<?php
 	$length = 100;
