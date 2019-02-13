@@ -1,5 +1,5 @@
 <?php include('-/stubs/header.php'); ?>
-<p><b>Shortn</b> ist ein privater URL-Verkürzungsdienst</p>
-<p>Der Dienst verkürzt lange URLs auf eine übersichtliche Kurznotation, erfasst die ausgeführten Klicks und bietet eine eingebaute Twitter-Schnittstelle.<br>
-Der Dienst ist nicht öffentlich zugänglich. Zum Aufbau eines eigenen Dienstes lohnt ein Blick auf <a href="http://shauninman.com/archive/2009/08/17/less_n">Shaun Inman's Lessn</a>.</p>
+<p><b>Shortn</b> is an extremely simple, personal url shortener.</p>
+<p>The service shortens long URLs to a concise shorthand notation, captures the clicks and offers a built-in twitter interface.<br>
+The service is not publicly accessible. To build up your own service it is worth to have a look <a href="http://shauninman.com/archive/2009/08/17/less_n">Shaun Inman's Lessn</a>.</p>
 <?php include('-/stubs/footer.php'); ?>
