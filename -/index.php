@@ -44,9 +44,9 @@ else if (!isset($_GET['api']))
 if (isset($_GET['url']) && !empty($_GET['url']))
 {
 	$url = $_GET['url'];
-	if (!preg_match('#^[^:]+://#', $url))
+	if (!preg_match('/^[^:]+:\/\//', $url))
 	{
-		$url = 'http://'.$url;
+		$url = 'https://'.$url;
 	}
 	$checksum 		= sprintf('%u', crc32($url));
 	if ($db->query($db->prepare('SELECT `id` FROM `'.DB_PREFIX.'urls` WHERE `checksum`=? AND `url`=? LIMIT 1', $checksum, $url))) {
@@ -62,7 +62,7 @@ if (isset($_GET['url']) && !empty($_GET['url']))
 
 	if (isset($_GET['tweet']))
 	{
-		$_GET['redirect'] = 'http://twitter.com/?status=%l';
+		$_GET['redirect'] = 'https://twitter.com/?status=%l';
 	}
 
 	if (isset($_GET['redirect']))
